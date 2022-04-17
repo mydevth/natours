@@ -1,0 +1,122 @@
+param middleware is middleware that only run for certain parameters, 
+
+// test create own Middleware for test excute order , default put it before route
+app.use((req, res, next) => {
+  console.log('Hello from the Middleware ❤');
+  next();
+});
+
+app.use((req, res, next) => {
+  req.requestTime = new Date().toISOString();
+  // req.kobTime = new Date().toISOString();     //test var
+  next();
+});
+
+
+----
+
+  if (req.params.id * 1 > tours.length) {
+    return res.status(404).json({
+      status: 'fail',
+      message: 'Invalid ID'
+    });
+  }
+  next();
+};
+
+
+ if (req.params.id * 1 > tours.length) {
+    return res.status(404).json({
+      status: 'fail',
+      message: 'Invalid ID'
+    });
+  }
+
+
+// if (id > tours.length) {     // find incorrect input ID  Sol-1
+  if (!tour) {                    // find incorrect input ID  Sol-2
+    return res.status(404).json({
+      status: 'fail',
+      message: 'Invalid ID'
+    });
+  }
+
+
+npm package named dotenv
+
+
+npm i eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-node eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react --save-dev
+
+
+ npm i eslint@5.16.0
+
+ plugin   
+     prettierrc
+     eslint
+
+//Section 09
+ npm install -g ndb //node debuger
+package.json  -> "script" -> "debug": "ndb server.js"
+ npm run debug
+
+Error in lesson #187
+--> ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep 200
+https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/learn/lecture/15065656#questions/16779326
+
+
+# 191   Parcel Bundler
+npm uninstall parcel-bundler
+npm i parcel-bundler@1.12.3 --save-dev
+npm run watch:js
+
+# 191 got Error
+----------------------
+Error on client side Javascript Console - bundle.js:37 Uncaught Error: Cannot find module 'core-js/modules/es6.array.copy-within'
+
+bundle.js:37 Uncaught Error: Cannot find module 'core-js/modules/es6.array.copy-within'
+    at newRequire (bundle.js:37)
+    at localRequire (bundle.js:53)
+    at Object.parcelRequire.index.js (bundle.js:123)
+    at newRequire (bundle.js:47)
+    at bundle.js:81
+    at bundle.js:120
+newRequire @ bundle.js:37
+localRequire @ bundle.js:53
+parcelRequire.index.js @ bundle.js:123
+newRequire @ bundle.js:47
+(anonymous) @ bundle.js:81
+(anonymous) @ bundle.js:120 
+-------------------------------
+How to Fixed
+Run this command
+
+npm i core-js@2.6.5
+
+
+------------------------------------
+###194  Logout in profile, tour page e
+Avoid jwt malformed
+
+https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/learn/lecture/15087348#questions/9415183
+  in login.js, in the logout function:
+    replace:
+    location.reload(true)
+    with:
+    location.replace('/')
+
+###199 mpm i multer@1.4.1
+
+###202  npm i sharp
+
+###206  npm i html-to-text
+
+###209 
+  sendgrid
+
+stripe
+akkadate@gmail.com
+Tct085329$
+
+### 222 npm i compression
+        npm run build:js
+
